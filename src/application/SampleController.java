@@ -148,8 +148,10 @@ public class SampleController implements Initializable {
 
     @FXML
     void searchButtonPressed(javafx.event.ActionEvent event) {
-        String searchTerm = nameInput.getText().trim();
-
+        String serialNum = serialNumInput.getText();
+    	String name = nameInput.getText().trim();
+    	String type = typeInput.getText();
+        
         if (searchTerm.isEmpty()) {
             resultsListView.setItems(toys);
         } else {
@@ -194,6 +196,6 @@ public class SampleController implements Initializable {
 
     @FXML
     void sortButtonPressed(ActionEvent event) {
-
+    	
     }
 }
